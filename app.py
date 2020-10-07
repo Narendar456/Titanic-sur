@@ -6,7 +6,7 @@ import gspread
 gc = gspread.service_account(filename = "cred.json")
 sh = gc.open_by_key("10Eaw0vi941eOeapiAVvfScrEySvWZBQiP_DmyPTUEfI")
 
-worksheet = sh.Sheet1
+worksheet = sh.sheet1
 
 app = Flask(__name__, static_url_path='/static')
 model = pickle.load(open('random_forest_titanic_model.pkl', 'rb'))
