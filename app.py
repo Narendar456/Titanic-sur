@@ -1,8 +1,5 @@
-model_path =r'C:\Users\naren\Downloads\titanic-main\titanic-main\titanic\model\dtc1.sav'
 
-    model = joblib.load(model_path)
-
-from flask import *
+from flask import Flask
 import pickle
 import gspread
 
